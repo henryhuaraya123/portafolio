@@ -114,20 +114,17 @@ b{
     display: none;
   }
 
+  .acomodar
+  {
+    width: 40vh;
+  }
+
 }
 
-.cargando
+.acomodar
 {
-    height: 100vh;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font: oblique bold 120% cursive;
-    font-size: 80%;
+  height: 60vh;
 }
-
 
 body
 {
@@ -141,13 +138,14 @@ body
   position: relative;
   width: 40vh;
   height: 55vh;
+  margin-top: 1vh;
 }
 
 .cardcer {
   position: relative;
   width: auto;
   height: 35vh;
-  margin-top: 1vh;
+  margin-top: 2vh;
 }
 
 .cardcer .face {
