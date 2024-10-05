@@ -1,0 +1,345 @@
+
+.lds-ripple,
+.lds-ripple div {
+  box-sizing: border-box;
+}
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #088deb;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+
+.hid
+{
+    overflow: hidden;
+}
+
+b{
+  color: #ccff3c;
+}
+
+
+.float-wa{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:40px;
+  right:40px;
+  background-color:#25d366;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.social-icons
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 150px;
+    padding-left: 0;
+    padding-top: 1rem !important;
+}
+
+.header
+{
+  background-image: url(../img/head.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 100vh;
+}
+
+.col
+{
+  margin: 2vh;
+}
+
+.sn
+{
+  color: rgb(235 245 196);
+}
+
+@media (max-width: 900.98px) {
+  .header .social-icons {
+      margin: auto;
+  }
+
+  .sn
+  {
+    text-align: center;
+  }
+
+  .porta
+  {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+  }
+
+  .thu
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fot
+  {
+    display: none;
+  }    
+
+  .certifi
+  {
+    display: none;
+  }   
+
+  .des
+  {
+    display: none;
+  }
+
+}
+
+.cargando
+{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font: oblique bold 120% cursive;
+    font-size: 80%;
+}
+
+
+body
+{
+  font-family: "Constantia", serif;
+  background-color: #131a20;
+  color: #ebf5c4;
+}
+
+
+.cardbachiller {
+  position: relative;
+  width: 40vh;
+  height: 55vh;
+}
+
+.cardcer {
+  position: relative;
+  width: auto;
+  height: 35vh;
+  margin-top: 1vh;
+}
+
+.cardcer .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.cardcer .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #f3f1f1;
+}
+
+.cardcer .front img {
+ 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.cardcer .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+
+  color: #fff;
+  text-align: center;
+}
+
+.cardcer .back {
+  transform: perspective(600px) rotateY(180deg);
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  box-shadow: 0 0px 0px #000;
+}
+
+.cardcer .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.cardcer .back .link a {
+  color: #f3f3f3;
+}
+
+.cardcer:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.cardcer:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+
+.cardbachiller .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.cardbachiller .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.cardbachiller .front img {
+ 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cardbachiller .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  text-align: center;
+}
+
+.cardbachiller .back {
+  transform: perspective(600px) rotateY(180deg);
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.cardbachiller .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.cardbachiller .back .link a {
+  color: #f3f3f3;
+}
+
+.cardbachiller .back h3 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+
+.cardbachiller .back p {
+  letter-spacing: 1px;
+} 
+
+.cardbachiller:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.cardbachiller:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+.relleno
+{
+  font-size: 2vh;
+  text-align: justify;
+  color: #eff6fd;
+}
+
+.card-img-top
+{
+    width: auto;
+    height: 20vh;
+    margin-top: 1vh;
+}
+
+.card
+{
+  background-color: #131a20;
+  
+}
+
+
+.card:hover
+{
+  background-color: #bbbdb057;
+  border: 4px solid #1344679a;
+}
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 8px;
+    height: 8px;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+  }
+}
+
